@@ -1,0 +1,28 @@
+name: 'guilded-webhook-action'
+description: 'Action for posting a message with text or embeds to a Guilded webhook'
+author: 'guildedjs'
+inputs:
+  content:
+    required: false
+    description: 'Text content for the message.'
+  title:
+    required: false
+    description: 'Title for the embed sent with the message.'
+  description:
+    required: false
+    description: 'Description for the embed sent with the message.'
+  color:
+    required: false
+    description: 'Color for the embed sent with the message.'
+  footer:
+    required: false
+    description: 'Footer for the embed sent with the message.'
+  author_name:
+    required: false
+    description: 'Author name for the embed sent with the message.'
+  author_icon:
+    required: false
+    description: 'Author icon for the embed sent with the message.'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
