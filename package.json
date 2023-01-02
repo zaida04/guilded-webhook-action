@@ -7,10 +7,9 @@
   "description": "Action for posting a message with text or embeds to a Guilded webhook",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc && npm run package",
+    "build": "tsc && ncc build lib/index.js --minify",
     "format": "prettier --write '**/*.ts'",
-    "lint": "eslint src/**/*.ts",
-    "package": "ncc build --source-map --license LICENSE"
+    "lint": "eslint src/**/*.ts"
   },
   "repository": {
     "type": "git",
