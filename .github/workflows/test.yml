@@ -1,0 +1,30 @@
+name: Testing Webhook Sending
+on:
+  workflow_dispatch:
+
+jobs:
+  plain:
+    name: Execute webhook w/ plain content
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build
+        run: yarn build
+
+      - uses: ./
+        env:
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          WEBHOOK_USERNAME: 'Testing Webhook!'
+          WEBHOOK_AVATAR: 'https://picsum.photos/200'
+        with:
+          content: "Hello, how's it going?"

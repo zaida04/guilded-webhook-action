@@ -1,0 +1,49 @@
+{
+  "name": "guilded-webhook-action",
+  "author": "Zaid \"Nico\"",
+  "license": "MIT",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Action for posting a message with text or embeds to a Guilded webhook",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && npm run package",
+    "format": "prettier --write '**/*.ts'",
+    "lint": "eslint src/**/*.ts",
+    "package": "ncc build --source-map --license LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guildedjs/guilded-webhook-action.git"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@guildedjs/webhook-client": "0.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.0",
+    "@vercel/ncc": "^0.31.1",
+    "eslint": "^8.31.0",
+    "eslint-config-neon": "^0.1.40",
+    "typescript": "^4.4.4"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "neon/common",
+      "neon/node",
+      "neon/typescript",
+      "neon/prettier"
+    ],
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "ignorePatterns": [
+      "**/dist/*"
+    ],
+    "rules": {
+      "import/extensions": "off",
+      "@typescript-eslint/no-confusing-void-expression": "off"
+    }
+  }
+}
