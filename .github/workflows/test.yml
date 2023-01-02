@@ -4,7 +4,7 @@ on:
 
 jobs:
   plain:
-    name: Execute webhook w/ plain content
+    name: Execute webhook w/ plain content & embed
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -25,6 +25,19 @@ jobs:
         env:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
           WEBHOOK_USERNAME: 'Testing Webhook!'
-          WEBHOOK_AVATAR: 'https://picsum.photos/200'
+          WEBHOOK_AVATAR: 'https://i.picsum.photos/id/483/200/200.jpg?hmac=tIKQEdwuW7trzVGWGE-cAgtpmRJla51INgO9dvJG3hA'
         with:
           content: "Hello, how's it going?"
+
+      - uses: ./
+        env:
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          WEBHOOK_USERNAME: 'Testing Webhook 2!'
+          WEBHOOK_AVATAR: 'https://i.picsum.photos/id/483/200/200.jpg?hmac=tIKQEdwuW7trzVGWGE-cAgtpmRJla51INgO9dvJG3hA'
+        with:
+          title: 'This is an embed!'
+          description: 'This is a description!'
+          color: 'GREEN'
+          footer: 'Brought to you by guilded.js'
+          author_name: 'GuildedJS'
+          author_icon: 'https://github.com/guildedjs/guilded.js/blob/main/static/guilded-icon.png?raw=true'
