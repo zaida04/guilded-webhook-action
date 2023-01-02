@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - uses: guildedjs/guilded-webhook-action@main
+    - uses: guildedjs/guilded-webhook-action@v1
       env:
         WEBHOOK_URL: "https://media.guilded.gg/webhooks/XXXXXX/YYYYY"
         WEBHOOK_USERNAME: "Testing Webhook!"
@@ -29,8 +29,11 @@ jobs:
 
 ## Contributing
 
-Please see the main [README.md](https://github.com/guildedjs/guilded.js) for info on how to contribute to this package or the other `@guildedjs` packages.
+1. Fork the repo
+2. Create a branch with your changes
+3. Create a pull request
+4. Wait for it to be reviewed and potentially merged
 
 ## LICENSE
 
-Licensed under the [MIT License](https://github.com/guildedjs/guilded.js/blob/main/LICENSE)
+Licensed under the [MIT License](https://github.com/guildedjs/guilded-webhook-action/blob/main/LICENSE)
