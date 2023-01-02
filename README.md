@@ -27,6 +27,27 @@ jobs:
         content: "Hello, how's it going?"
 ```
 
+## Customization
+
+**You must provide text content, or an embed with a title and description.**
+### Args
+| Name        	| Description                                                                 	|
+|-------------	|-----------------------------------------------------------------------------	|
+| content     	| Text content for the message.                                               	|
+| title       	| Title for the embed sent with the message.                                   	|
+| description 	| Description for the embed sent with the message.  	                          |
+| color       	| Color for the embed sent with the message. 	                                  |
+| footer      	| Footer for the embed sent with the message.                                 	|
+| author_name 	| Author name for the embed sent with the message.                            	|
+| author_icon 	| Author icon for the embed sent with the message.                             	|
+
+### Env
+| Name             	| Description                                                        	|
+|------------------	|--------------------------------------------------------------------	|
+| WEBHOOK_URL      	| Webhook URL                                                        	|
+| WEBHOOK_USERNAME 	| Username that the webhook will have for the message sent           	|
+| WEBHOOK_AVATAR   	| URL for the avatar that the webhook will have for the message sent 	|
+
 ## Contributing
 
 1. Fork the repo
