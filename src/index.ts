@@ -1,4 +1,4 @@
-import { debug, setFailed, getInput } from '@actions/core'
+import { debug, setFailed, getInput, info, } from '@actions/core'
 import { WebhookClient, Embed } from '@guildedjs/webhook-client';
 import { getEnv } from './env';
 
@@ -41,7 +41,7 @@ async function main(): Promise<void> {
         username: webhookUsername ?? undefined
       }
     )
-    debug(`Webhook message sent, ID ${message.id}`)
+    info(`Webhook message sent, ID ${message.id}`)
   } catch (error) {
     return setFailed(error as Error);
   }
