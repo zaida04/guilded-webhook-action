@@ -215,22 +215,22 @@
   resolved "https://registry.yarnpkg.com/@guildedjs/guilded-api-typings/-/guilded-api-typings-3.0.0.tgz#d9bc0a839f78ccabd73f3eb211a65e840dae5088"
   integrity sha512-oAQwkLaG0dTtm0zYUs8xMM2nVlfJTpH+Pf3zs/stlDYBy6Vu01U1nHMVRj1LtdDvDI3NuZ+R1Uz4tnOFoDo/lg==
 
-"@guildedjs/rest@2.10.0":
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/@guildedjs/rest/-/rest-2.10.0.tgz#8ecf907ef4e95d95ef747b8d6a83dd933cfd7f29"
-  integrity sha512-Eq/UPvkPvbHrIkDyeDfsbDsBoGYQdodg5VSuHLAGGZTsi+5j63mmgNa19uAQRx+42j0hoiN8yx3W/c2uezJHrw==
+"@guildedjs/rest@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@guildedjs/rest/-/rest-3.0.0.tgz#f43063aae7e64ed795d73e86f86f8e19da27bf83"
+  integrity sha512-bz7jnZtwGhPjJ+4u6K4QLkZT1Tbtj07SzO33gCL7fHVftozgZiT+Ac7o0HmX4et2OBuCoEBwChnXsEv4ZbQ1Ug==
   dependencies:
     form-data "^4.0.0"
     node-fetch "2.6.7"
     qs "^6.10.5"
 
-"@guildedjs/webhook-client@0.4.4":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@guildedjs/webhook-client/-/webhook-client-0.4.4.tgz#2d35350275be70d6e4e1381959ad588e415038a2"
-  integrity sha512-7+7/s9Pm7x2IYe3h5iYVikf/tgK8f+1V98G/hLqkDxkDwPt5RF3wptlnCoUguY1OvPxXyX5+iIM5qy3VsqzHJA==
+"@guildedjs/webhook-client@0.4.5":
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/@guildedjs/webhook-client/-/webhook-client-0.4.5.tgz#427a44c598f5d59266bf9002abdd4be347cc96a8"
+  integrity sha512-DkX5p+lHE4ckNIDHkV8wJOFYOzHkXHmfdVdqGfdxktrpYsq4YqbA+JLP4M5CODCNKxXZRBA6AniucKgRVdjTlg==
   dependencies:
     "@guildedjs/guilded-api-typings" "3.0.0"
-    "@guildedjs/rest" "2.10.0"
+    "@guildedjs/rest" "3.0.0"
     form-data "^4.0.0"
 
 "@humanwhocodes/config-array@^0.11.8":
