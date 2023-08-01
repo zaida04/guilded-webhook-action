@@ -20,7 +20,7 @@
     "@guildedjs/webhook-client": "0.4.4"
   },
   "devDependencies": {
-    "@types/node": "^18.11.0",
+    "@types/node": "^20.4.5",
     "@vercel/ncc": "^0.31.1",
     "eslint": "^8.31.0",
     "eslint-config-neon": "^0.1.40",
